@@ -1,0 +1,17 @@
+.copy-btn{
+background-color: black;
+color: white;
+font-weight: bold;
+width: 90px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.textutils{
+display: grid;
+place-content: center;
+height: 100vh;
+}
+.input-group{
+    width: 60vw;
+    min-height: 30vh;
+}

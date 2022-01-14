@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+messenger  h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: white;
+}
+.messenger {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: lightblue;
+  overflow: hidden;
+}
+.messenger img {
+  margin: auto;
+  filter: invert(100%);
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.messenger h1 {
+  color: white;
+}
+.messenger .user-inp {
+  margin: 60px;
+  display: flex;
+  min-width: 100vw;
+  justify-content: space-evenly;
+}
+.messenger .user-inp input {
+  border: none;
+  border-bottom: 2px solid white;
+  /* border-left: 2px solid white; */
+  background-color: transparent;
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+  outline: none !important;
+}
+.messenger .submit-btn {
+  width: auto;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 22px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  transition: 0.5s;
+}
+.messenger .submit-btn:hover {
+  background-color: white;
+  color: lightskyblue;
+}
+/* user.js */
+.chat {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.user {
+  border: 5px solid white;
+  background-color: lightblue;
+  width: 50%;
+  min-height: 100vh;
+  padding: 20px 40px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.user-info img {
+  height: 50px;
+}
+.chat-box-wrapper {
+  border-radius: 20px;
+  background-color: white;
+  min-height: 80vh;
+  max-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+.chat-box {
+  height: 74vh;
+  overflow-y: scroll;
+  width: calc(100% + 17px);
+}
+
+.chat-box-wrapper .chat-box div{
+width: 100%;
+overflow: hidden;
+}
+.chat-box-wrapper .chat-box p {
+  padding: 5px 10px;
+  margin: 5px;
+  width: fit-content;
+}
+.chat-box-wrapper .chat-box .reciever-message {
+  background-color: lightgray;
+  color: black;
+  border-radius: 30px 30px 30px 0px;
+  display: inline-block;
+}
+.chat-box-wrapper .chat-box .sender-message {
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 30px 30px 0px 30px;
+  float: right;  
+}
+.chat-box-wrapper .send {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-box-wrapper .send i {
+  width: 20px;
+  cursor: pointer;
+  color: lightskyblue;
+  transition: .5s;
+}.chat-box-wrapper .send i:hover{
+  color: lightslategray;
+}
+.chat-box-wrapper .send input {
+  width: calc(100% - 25px);
+  border: none;
+  border: 2px solid lightgray;
+  border-radius: 30px;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 5px;
+  color: black;
+  outline: lightblue !important;
+}

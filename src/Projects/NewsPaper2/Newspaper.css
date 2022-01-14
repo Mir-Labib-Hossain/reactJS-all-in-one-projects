@@ -1,0 +1,114 @@
+.home {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.spaced {
+  letter-spacing: 10px;
+}
+.title{
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.navbar{
+  margin-bottom:90px
+}
+.nav-link,
+.navbar-brand {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.nav-link:hover {
+  filter: grayscale(0);
+}
+.active {
+  filter: grayscale(0) !important;
+  color: #ffc107 !important;
+}
+.nav-link {
+  margin-left: 15px;
+}
+.dropdown{
+  display: grid;
+  place-content: center;
+}
+
+.dropdown .dropdown-toggle {
+  font-weight: bold;
+  color: black !important;
+}
+.dropdown-menu {
+  width: 267px;
+}
+.dropdown .dropdown-menu button {
+  margin: 3px;
+  padding: 2px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.dropdown .dropdown-menu button:hover {
+  border: 2px solid lightgray !important;
+}
+.dropdown .dropdown-menu button:active {
+  border: 2px solid gray !important;
+}
+.active-flag {
+  border: 2px solid gray !important;
+}
+.dropdown .dropdown-menu button * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.error {
+  display: grid;
+  place-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+.error img {
+  margin: auto;
+}
+.col-md-4 .card {
+  display: block;
+  margin: auto !important;
+}
+.bullet {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.col-md-4 .card img {
+  border-radius: 7px 0 0 0;
+}
+.card-text {
+  color: gray;
+}
+.card-title,
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.card-text {
+  -webkit-line-clamp: 4;
+}
+.card-img-top {
+  height: 200px;
+}
+.card-info {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.card-info p {
+  margin: 0;
+  font-weight: bold;
+}
+.card-info span {
+  color: gray;
+  font-size: 12px;
+}

@@ -1,0 +1,32 @@
+.list-item {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+  align-content: center;
+}
+.border-effect {
+  -webkit-box-shadow: 13px 10px 18px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 13px 10px 18px 0px rgba(0, 0, 0, 0.38);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.list-item img {
+  height: 50px;
+  margin: 10px;
+}
+.list-item > div {
+  display: grid;
+  place-content: center;
+}
+.list-item > div > p {
+  margin: 0 !important;
+  color: black;
+  font-weight: bold;
+}
+.border-effect:hover {
+  box-shadow: none;
+  border: 2px solid black;
+  cursor: pointer;
+}
