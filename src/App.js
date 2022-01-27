@@ -1,18 +1,20 @@
 import "./App.css";
 import "./List.css";
-import "font-awesome/css/font-awesome.min.css";
 import AOS from "aos";
+import List from "./List";
 import "aos/dist/aos.css";
+import {useEffect} from "react"
+import "font-awesome/css/font-awesome.min.css";
+import { Link, Route } from "react-router-dom";
+// importing indivisual projects
 import McDonals from "./Projects/McDonals/McDonals";
+import Newspaper from "./Projects/Newspaper/Newspaper";
 import Messenger from "./Projects/Messenger/Messenger";
 import TextUtils from "./Projects/TextUtils/TextUtils";
-import ThemeChanger from "./Projects/ThemeChanger/ThemeChanger";
-import { Link, Route } from "react-router-dom";
-import {useEffect} from "react"
-import List from "./List";
-import Newspaper from "./Projects/Newspaper/Newspaper";
 import NewsPaper2 from "./Projects/NewsPaper2/NewsPaper2";
 import BlackFriday from "./Projects/ECommerce/BlackFriday";
+import Temperature from "./Projects/Temperature/Temperature";
+import ThemeChanger from "./Projects/ThemeChanger/ThemeChanger";
 function App() {
 
   let files = [
@@ -57,6 +59,12 @@ function App() {
       icon: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/100/000000/external-newspaper-news-flatart-icons-lineal-color-flatarticons-1.png",
       background: "lightgray",
       Component: NewsPaper2,
+    },
+    {
+      name: "Temperature Calculator",
+      icon: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/100/000000/external-newspaper-news-flatart-icons-lineal-color-flatarticons-1.png",
+      background: "lightgray",
+      Component: Temperature,
     },
   ];
 useEffect(() => {
